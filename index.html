@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小丑的个人空间</title>
     <link rel="icon" href="icon.png">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .topmenu{
+            height: 50px;
+            background-color: cadetblue;
+            margin: auto;
+            z-index: 9998;
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+        }
+        .menu{
+            margin: auto;
+            width: 1000px;
+        }
+        .menu a{
+            color: black;
+        }
+        .menu a:hover{
+            font-weight: bold;
+        }
+        .menu li{
+            float: left;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <style>
+        
         @font-face {
             font-family: "caviar dreams";
             src: url("fonts/CAVIARDREAMS.TTF");
@@ -15,32 +50,57 @@
             font-weight: bold;
         }
         a{
-            color:black;
+            color:cadetblue;
             text-decoration: none;
         }
         a:hover{
             text-decoration:underline;
         }
+        .xiaozi{
+            font-size:10px;
+            color:rgb(100,100,100);
+        }
+        .dayidian{
+            font-size:20px;
+        }
     </style>
 </head>
-<body style="background-color: rgb(255, 255, 255);font-style: small; font-family: 'caviar dreams';">
-    <h1>欢迎来到我的个人空间！</h1>
+<body style="background-color: rgb(255, 255, 255);font-size:15px; font-family: 'caviar dreams';">
+    <!--顶部栏-->
+    <img src="icon.png" style="position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    z-index: 9999;">
+    <div class="topmenu">
+        <ul class="menu">
+            <li></li>            
+            <li><a href="#">不玩DL的小丑</a></li>
+            <li><a href="#">模板</a></li>
+
+        </ul>
+    </div>
+    
+    <!--主页内容-->
+    <div style="margin-top: 50px;">
+        <h1>欢迎来到我的个人空间！</h1>
     <p>你好吖！我是不玩DL的小丑。
         <br>点击下方按钮访问我的个人社交页面！
-        <br><a href="https://space.bilibili.com/3493128206027407"target="_blank">B站</a>
+        <br><a href="https://space.bilibili.com/3493128206027407"target="_blank"><button>Bilibili</button></a>
         <br>p.s. 此网站还在制作中。。。敬请期待
+        <br><br><br>
     </p>
-    <h3>Infinity Journey</h3>
-        <p>
-            Infinity Journey
-            <br><a href="https://qm.qq.com/q/r2HrfLGUP8"target="_blank">交流群</a>
-        </p>
+    <h3>个人作品</h3>
+    <h4> · the City</h4>
+        <a href="https://www.bilibili.com/video/BV1cqRQBHEsm">关卡视频</a>  
+        <br><a href="the City.zip" download>下载关卡</a>  <br><br><br>
     <h3>MIFT4.7.6 Remake</h3>
         <p>
-            本模板修改自冰焰模板4.7.6，后面忘了
-            <br><a href="MIFT4-7-6_Remake/">关于模板</a>
-            <br><a href="https://qm.qq.com/q/r2HrfLGUP8"><button>从Github下载</button></a>
+            <spac class="xiaozi">本模板修改自冰焰模板4.7.6，加入了一些官方的元素，后面忘了</spac>
+            <br><a href="MIFT4-7-6_Remake/"><button>关于模板</button></a>
+            <br><a href="https://qm.qq.com/q/r2HrfLGUP8"><button>加群下载</button></a>
             
-        </p>
+        </p></div>
+    
 </body>
 </html>
